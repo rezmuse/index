@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine?</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hey SAEE! 💖</h1>
+        <p class="heartfelt-message">
+            I just wanted to tell you how much you mean to me. Every moment with you is special, and I feel so lucky to have you in my life, <br> you make every moment feel so magical and i love you for that. ❤️
+        </p>
+        
+        <!-- Continue Button -->
+        <div class="continue-button-container">
+            <button class="continue" onclick="showQuestions()">Would you like to continue?</button>
+        </div>
+
+            <!-- Question Phase (Initially Hidden) -->
+        <div class="question-container" id="questionContainer" style="display: none;">
+            <!-- First question -->
+            <div class="question" id="question1">
+                <p>can u forgive me ?<br><I>(please it do it was a huge mistake n i aint forgiving myself for it, please don't cry i did not mean to hurt my devi)</I></p>
+                <button class="yes" onclick="nextQuestion('yes', 1)">Yes</button>
+                <button class="no" onclick="nextQuestion('no', 1)">No</button>
+            </div>
+
+            <!-- Second question -->
+            <div class="question" id="question2">
+                <p>Will you be my girlfriend?(i wanna be yours) <br><I>(I ain't leaving you never thought of it muwah)</I></p>
+                <button class="yes" onclick="nextQuestion('yes', 2)">Yes</button>
+                <button class="no" onclick="nextQuestion('no', 2)">No</button>
+            </div>
+
+            <!-- Final message -->
+            <div class="final-message" id="finalMessage">
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
