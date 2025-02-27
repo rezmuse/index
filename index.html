@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
+   <div class="container">
         <h1>Hey SAEE! 💖</h1>
         <p class="heartfelt-message">
-            I just wanted to tell you how much you mean to me. Every moment with you is special, and I feel so lucky to have you in my life, <br> you make every moment feel so magical and i love you for that. ❤️
+            I just wanted to tell you how much you mean to me. Every moment with you is special, and I feel so lucky to have you in my life. <br>
+            You make every moment feel so magical, and I love you for that. ❤️
         </p>
         
         <!-- Continue Button -->
@@ -17,27 +18,31 @@
             <button class="continue" onclick="showQuestions()">Would you like to continue?</button>
         </div>
 
-            <!-- Question Phase (Initially Hidden) -->
+        <!-- Question Phase (Initially Hidden) -->
         <div class="question-container" id="questionContainer" style="display: none;">
-            <!-- First question -->
-            <div class="question" id="question1">
-                <p>can u forgive me ?<br><I>(its fine if u cant but dont be mad, it was a huge mistake n i aint forgiving myself for it, please don't cry i did not mean to hurt my devi)</I></p>
-                 <button class="yes" onclick="nextQuestion('yes', 1)">Yes</button>
-                 <button class="no" onclick="nextQuestion('no', 1)">No</button>
-                 <button class="idk" onclick="nextQuestion('idk', 1)">IDK</button>
+            
+            <!-- First Question -->
+            <div class="question" id="question1" style="display: none;">
+                <p>Can you forgive me?<br>
+                <i>(It's fine if you can't, but don't be mad. It was a huge mistake, and I ain't forgiving myself for it. Please don't cry—I did not mean to hurt my Devi.)</i></p>
+                <button onclick="nextQuestion('yes', 1)">Yes</button>
+                <button onclick="nextQuestion('no', 1)">No</button>
+                <button onclick="nextQuestion('idk', 1)">IDK</button>
             </div>
 
-            <!-- Second question -->
-            <div class="question" id="question2">
-                <p>Will you be my girlfriend?(i wanna be yours) <br><I>(I ain't leaving you never thought of it muwah)</I></p>
-                <button class="yes" onclick="nextQuestion('yes', 1)">Yes</button>
-                <button class="no" onclick="nextQuestion('no', 1)">No</button>
+            <!-- Second Question -->
+            <div class="question" id="question2" style="display: none;">
+                <p>Will you be my girlfriend? (I wanna be yours)<br>
+                <i>(I ain't leaving you, never thought of it. Muwah! 😘)</i></p>
+                <button onclick="nextQuestion('yes', 2)">Yes</button>
+                <button onclick="nextQuestion('no', 2)">No</button>
             </div>
 
-            <!-- Final message -->
-            <div class="final-message" id="finalMessage">
+            <!-- Final Message -->
+            <div class="final-message" id="finalMessage" style="display: none;">
                 <p id="responseMessage"></p>
             </div>
+
         </div>
     </div>
 
