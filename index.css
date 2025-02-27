@@ -1,3 +1,6 @@
+/* Import font before using it */
+@import url('https://fonts.cdnfonts.com/css/bitterslide-evelwhite');
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -5,24 +8,25 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
-@import url('https://fonts.cdnfonts.com/css/bitterslide-evelwhite');
+/* Body Styling */
 body {
-   font-family: 'Bitterslide Evelwhite', sans-serif;                                          
+    font-family: 'Bitterslide Evelwhite', sans-serif;                                          
     background-color: #ffebcd;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px; /* Prevents overflow on small screens */
 }
 
-/* Main container */
+/* Main Container */
 .container {
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
     width: 450px;
+    max-width: 90%; /* Responsive for smaller screens */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,7 +37,7 @@ h1 {
     font-size: 24px;
 }
 
-/* Heartfelt message */
+/* Heartfelt Message */
 .heartfelt-message {
     font-size: 18px;
     color: #333;
@@ -49,21 +53,30 @@ h1 {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .continue:hover {
     background-color: #45a049;
 }
 
-/* Questions and buttons */
+/* Questions */
 .question {
-    display: none;  /* Hide questions initially */
+    display: none; /* Hide questions initially */
     margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures proper layout on small screens */
+    gap: 10px;
+    margin-top: 15px;
 }
 
 button {
@@ -71,17 +84,17 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+/* No Button (Red for contrast) */
 .no {
     background-color: #f44336;
 }
@@ -90,11 +103,26 @@ button:hover {
     background-color: #e60000;
 }
 
-/* Final response message */
-.final-message {
-    display: none; /* Hide the final message initially */
+/* IDK Button (Different color for neutral tone) */
+.idk {
+    background-color: #ffa500;
 }
 
+.idk:hover {
+    background-color: #e69500;
+}
+
+/* Final Response Message */
+.final-message {
+    display: none; /* Hide the final message initially */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#responseMessage {
+    font-size: 18px;
+    color: #333;
+}
 #responseMessage {
     font-size: 18px;
     color: #333;
