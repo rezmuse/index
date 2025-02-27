@@ -6,8 +6,9 @@
 }
 
 /* Body styling */
+@import url('https://fonts.cdnfonts.com/css/bitterslide-evelwhite');
 body {
-    font-family: 'Romantic', sans-serif;                                            
+   font-family: 'Bitterslide Evelwhite', sans-serif;                                          
     background-color: #ffebcd;
     display: flex;
     justify-content: center;
