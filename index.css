@@ -7,7 +7,8 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Romantic', sans-serif;
+    font-family: 'Winter', sans-serif;                                            
     background-color: #ffebcd;
     display: flex;
     justify-content: center;
