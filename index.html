@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Font Import -->
-    <link href="https://fonts.cdnfonts.com/css/bitterslide-evelwhite" rel="stylesheet">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Wanna Be Yours</title>
-
-    <!-- CSS File -->
+    <title>I Wanna Be Yours 💖</title>
+    <link href="https://fonts.cdnfonts.com/css/bitterslide-evelwhite" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <div class="container">
+    <div class="container">
         <h1>Hey SAEE! 💖</h1>
         <p class="heartfelt-message">
             I just wanted to tell you how much you mean to me. Every moment with you is special, and I feel so lucky to have you in my life. <br>
-            You make every moment feel so magical, and I love you for that. ❤️
+            You make everything feel magical, and I love you for that. ❤️
         </p>
         
-        <!-- Continue Button -->
         <div class="continue-button-container">
             <button class="continue" onclick="showQuestions()">Would you like to continue?</button>
         </div>
 
-        <!-- Question Phase (Initially Hidden) -->
-        <div class="question-container" id="questionContainer">
+        <div class="question-container" id="questionContainer" style="display: none;">
             
-            <!-- First Question -->
-            <div class="question" id="question1">
+            <div class="question" id="question1" style="display: none;">
                 <p>Can you forgive me?<br>
                 <i>(It's fine if you can't, but don't be mad. It was a huge mistake, and I ain't forgiving myself for it. Please don't cry—I did not mean to hurt my Devi.)</i></p>
-                <div class="button-container">
-                    <button class="yes" onclick="nextQuestion('yes', 1)">Yes</button>
-                    <button class="no" onclick="nextQuestion('no', 1)">No</button>
-                    <button class="idk" onclick="nextQuestion('idk', 1)">IDK</button>
-                </div>
+                <button class="yes" onclick="nextQuestion('yes', 1)">Yes</button>
+                <button class="no" onclick="nextQuestion('no', 1)">No</button>
+                <button class="idk" onclick="nextQuestion('idk', 1)">IDK</button>
             </div>
 
-            <!-- Second Question -->
-            <div class="question" id="question2">
+            <div class="question" id="question2" style="display: none;">
                 <p>Will you be my girlfriend? (I wanna be yours)<br>
                 <i>(I ain't leaving you, never thought of it. Muwah! 😘)</i></p>
-                <div class="button-container">
-                    <button class="yes" onclick="nextQuestion('yes', 2)">Yes</button>
-                    <button class="no" onclick="nextQuestion('no', 2)">No</button>
-                </div>
+                <button class="yes" onclick="nextQuestion('yes', 2)">Yes</button>
+                <button class="no" onclick="nextQuestion('no', 2)">No</button>
             </div>
 
-            <!-- Final Message -->
-            <div class="final-message" id="finalMessage">
+            <div class="final-message" id="finalMessage" style="display: none;">
                 <p id="responseMessage"></p>
             </div>
-
         </div>
     </div>
 
-    <!-- JavaScript File -->
     <script src="index.js"></script>
 </body>
 </html>
