@@ -11,7 +11,7 @@
 /* Apply Background Image Properly */
 body {
     font-family: 'Bitterslide Evelwhite', sans-serif !important;
-    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background: url('https://scontent.fpnq13-6.fna.fbcdn.net/v/t1.15752-9/476485167_953372839852410_8297155665124177398_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8dqaPU0wckcQ7kNvgFcspob&_nc_oc=AdjAN7rtD-zbKkGCdM6b88orPuvaboCAKfCSgmBKfebkArgLLffdqAfuXUj_bP53DjgaLJ_edOSZOzg2s9q-WIgU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpnq13-6.fna&oh=03_Q7cD1gGnb2w_tDCRiXH69ARHeN-qgqSYlXi26hqxMNtCJdItTQ&oe=67E91C6D') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
