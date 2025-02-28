@@ -22,10 +22,8 @@ body {
 
 /* Main Container */
 .container {
-    background-color: white;
-    opacity: 0.8; /* 80% visible, 20% transparent */
+    background-color: rgba(255, 255, 255, 0.7); /* 70% visible */
 }
-
 
 /* Title */
 h1 {
