@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,27 +11,27 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Bitterslide Evelwhite', sans-serif;
-    background: url(https://scontent.fpnq13-6.fna.fbcdn.net/v/t1.15752-9/476485167_953372839852410_8297155665124177398_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8dqaPU0wckcQ7kNvgFcspob&_nc_oc=AdjAN7rtD-zbKkGCdM6b88orPuvaboCAKfCSgmBKfebkArgLLffdqAfuXUj_bP53DjgaLJ_edOSZOzg2s9q-WIgU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpnq13-6.fna&oh=03_Q7cD1gGnb2w_tDCRiXH69ARHeN-qgqSYlXi26hqxMNtCJdItTQ&oe=67E91C6D) no-repeat center center fixed;
+    background: url(https://scontent.fpnq13-6.fna.fbcdn.net/v/t1.15752-9/476485167_953372839852410_8297155665124177398_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8dqaPU0wckcQ7kNvgFcspob&_nc_oc=AdjAN7rtD-zbKkGCdM6b88orPuvaboCAKfCSgmBKfebkArgLLffdqAfuXUj_bP53DjgaLJ_edOSZOzg2s9q-WIgU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpnq13-6.fna&oh=03_Q7cD1gF_tcv7qTQJ4LI0d0T1EA7AKDbJ85zmC_dO4nuOBDhfAA&oe=67E91C6D) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Ensures no scrolling issues */
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden; /* Removes any unnecessary scrolling */
+    overflow: hidden;
 }
 
-/* Transparent Container */
+/* Transparent Container (with better visibility) */
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.2); /* 20% transparent white */
+    background: rgba(0, 0, 0, 0.3);  /* Slightly darker for contrast */
     border-radius: 15px;
     padding: 30px;
     width: 450px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: none;
 }
 
 /* Title */
@@ -73,7 +73,7 @@ h1 {
 .question {
     display: none;
     margin-bottom: 20px;
-    color: #fff; /* Ensuring text inside is readable */
+    color: #fff;
 }
 
 button {
@@ -112,7 +112,7 @@ button:hover {
 /* Final response message */
 .final-message {
     display: none;
-    color: #fff; /* Ensuring final message is readable */
+    color: #fff;
 }
 
 #responseMessage {
