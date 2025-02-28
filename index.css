@@ -22,14 +22,12 @@ body {
 
 /* Main Container */
 .container {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Light translucency */
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    border-radius: 10px; /* Smooth edges */
     padding: 30px;
-    width: 450px;
-    max-width: 90%; /* Responsive for smaller screens */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Title */
 h1 {
