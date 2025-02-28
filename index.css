@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset to remove unwanted spaces */
 * {
     margin: 0;
     padding: 0;
@@ -7,44 +7,40 @@
 
 @import url('https://fonts.cdnfonts.com/css/bitterslide-evelwhite');
 
+/* Apply the font properly */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Bitterslide Evelwhite', sans-serif;
+    font-family: 'Bitterslide Evelwhite', sans-serif !important;
     background: url('https://scontent.fpnq13-6.fna.fbcdn.net/v/t1.15752-9/476485167_953372839852410_8297155665124177398_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8dqaPU0wckcQ7kNvgFcspob&_nc_oc=AdjAN7rtD-zbKkGCdM6b88orPuvaboCAKfCSgmBKfebkArgLLffdqAfuXUj_bP53DjgaLJ_edOSZOzg2s9q-WIgU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpnq13-6.fna&oh=03_Q7cD1gGnb2w_tDCRiXH69ARHeN-qgqSYlXi26hqxMNtCJdItTQ&oe=67E91C6D') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    border: none;  /* Ensures no white border */
 }
 
 /* Transparent Container */
 .container {
     text-align: center;
-    background: rgba(0, 0, 0, 0.4);  /* Darker so text is visible */
+    background: rgba(0, 0, 0, 0.3);  /* Adjust transparency */
     border-radius: 15px;
     padding: 30px;
     width: 450px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    border: none;
+    backdrop-filter: blur(10px);
 }
 
 /* Title */
 h1 {
     color: #fff;
-    margin-bottom: 20px;
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
-/* Heartfelt message */
-.heartfelt-message {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 30px;
+/* Fix font display issues */
+p, button {
+    font-family: 'Bitterslide Evelwhite', sans-serif !important;
 }
 
 /* Buttons */
@@ -62,4 +58,11 @@ button {
 
 button:hover {
     transform: scale(1.05);
+}
+
+/* Remove any weird padding causing white borders */
+html, body {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
